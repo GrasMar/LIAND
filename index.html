@@ -724,6 +724,104 @@
     text-transform: uppercase;
   }
 
+  /* ======================= PRODUCTS ======================= */
+  .products {
+    background: var(--cream);
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .product-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 2.25rem 2rem;
+    transition: all 0.3s ease;
+  }
+  .product-card:hover {
+    border-color: var(--red);
+    transform: translateY(-3px);
+  }
+
+  .product-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    background: rgba(166, 58, 42, 0.08);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+  .product-icon svg { width: 22px; height: 22px; }
+
+  .product-card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    margin-bottom: 0.75rem;
+  }
+
+  .product-card p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    font-weight: 300;
+  }
+
+  /* Rendering explainer */
+  .rendering-card {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 2.75rem;
+    border-left: 3px solid var(--red);
+  }
+  .rendering-top { margin-bottom: 1.25rem; }
+  .rendering-top .overline {
+    color: var(--red-soft);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .rendering-top h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: var(--cream);
+  }
+  .rendering-card > p {
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: rgba(250, 247, 242, 0.78);
+    font-weight: 300;
+    max-width: 760px;
+    margin-bottom: 2rem;
+  }
+  .rendering-outputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+  }
+  .output-tag {
+    padding: 0.65rem 1.1rem;
+    border: 1px solid rgba(250, 247, 242, 0.22);
+    font-family: 'Archivo', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red-soft);
+  }
+
   /* ======================= GROWTH ======================= */
   .growth {
     background: var(--ink);
@@ -888,6 +986,7 @@
     .stat { border-right: none; border-bottom: 1px solid var(--line); }
     .stat:nth-child(odd) { border-right: 1px solid var(--line); }
     .verified-badges { grid-template-columns: repeat(2, 1fr); }
+    .products-grid { grid-template-columns: 1fr; }
     .growth-container { grid-template-columns: 1fr; gap: 3rem; }
     .growth-stats { flex-direction: row; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
     .growth-stat { flex: 1; min-width: 140px; }
@@ -1250,7 +1349,7 @@
     </div>
     <div>
       <div class="brand-text">LIAND</div>
-      <span class="brand-sub" data-en="S.A. — EST. 2010" data-es="S.A. — DESDE 2010">S.A. — EST. 2010</span>
+      <span class="brand-sub" data-en="S.A. — EST. 1990" data-es="S.A. — DESDE 1990">S.A. — EST. 1990</span>
     </div>
   </a>
 
@@ -1282,7 +1381,7 @@
         <span data-en="Livestock" data-es="Subproductos">Livestock</span><br>
         <span data-en="by-products," data-es="ganaderos,">by-products,</span><br>
         <span data-en="exported" data-es="exportados">exported</span><br>
-        <span class="line-accent" data-en="worldwide since 2010." data-es="al mundo desde 2010.">worldwide since 2010.</span>
+        <span class="line-accent" data-en="worldwide since 1990." data-es="al mundo desde 1990.">worldwide since 1990.</span>
       </h1>
 
       <p class="hero-subtitle" data-en="Premium hides, tallow and rendering products delivered to over 15 countries — from South America to the world."
@@ -1343,9 +1442,9 @@
           Rooted in Argentina, <em>trusted worldwide.</em>
         </h2>
       </div>
-      <p class="section-lead" data-en="We are a company with more than 50 years of experience dedicated to the export of livestock by-products. Our own national and international logistics, combined with offices across Mercosur and Asia, allow us to serve clients wherever they operate."
-                               data-es="Somos una empresa con más de 50 años de experiencia dedicada a la exportación de subproductos ganaderos. Nuestra logística propia nacional e internacional, junto con oficinas en Mercosur y Asia, nos permite atender a clientes en cualquier parte del mundo.">
-        We are a company with more than 50 years of experience dedicated to the export of livestock by-products. Our own national and international logistics, combined with offices across Mercosur and Asia, allow us to serve clients wherever they operate.
+      <p class="section-lead" data-en="We are a company with more than 30 years of experience dedicated to the export of livestock by-products. Our own national and international logistics, combined with offices across Mercosur and Asia, allow us to serve clients wherever they operate."
+                               data-es="Somos una empresa con más de 30 años de experiencia dedicada a la exportación de subproductos ganaderos. Nuestra logística propia nacional e internacional, junto con oficinas en Mercosur y Asia, nos permite atender a clientes en cualquier parte del mundo.">
+        We are a company with more than 30 years of experience dedicated to the export of livestock by-products. Our own national and international logistics, combined with offices across Mercosur and Asia, allow us to serve clients wherever they operate.
       </p>
     </div>
 
@@ -1383,7 +1482,7 @@
     <!-- Stats Row -->
     <div class="stats fade-in">
       <div class="stat">
-        <div class="stat-value">50<small>+</small></div>
+        <div class="stat-value">30<small>+</small></div>
         <div class="stat-label" data-en="Years of Experience" data-es="Años de Experiencia">Years of Experience</div>
       </div>
       <div class="stat">
@@ -1555,7 +1654,7 @@
           <div class="growth-stat-label" data-en="Containers / month in 2026" data-es="Contenedores / mes en 2026">Containers / month in 2026</div>
         </div>
         <div class="growth-stat">
-          <div class="growth-stat-value"><span class="plus">+</span><span id="countYears">50</span></div>
+          <div class="growth-stat-value"><span class="plus">+</span><span id="countYears">30</span></div>
           <div class="growth-stat-label" data-en="Years of experience" data-es="Años de experiencia">Years of experience</div>
         </div>
       </div>
@@ -1563,6 +1662,93 @@
   </div>
 </section>
 
+
+<!-- ============== PRODUCTS ============== -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div>
+        <div class="section-eyebrow overline" data-en="Our Products" data-es="Nuestros Productos">Our Products</div>
+        <h2 class="section-title" data-en="Four outputs, <em>one standard.</em>"
+                                  data-es="Cuatro productos, <em>un mismo estándar.</em>">
+          Four outputs, <em>one standard.</em>
+        </h2>
+      </div>
+      <p class="section-lead" data-en="From wet salted hides to rendering by-products, every line we export meets the same commitment to quality, consistency and traceability."
+                               data-es="Desde cueros wet salted hasta subproductos de rendering, cada línea que exportamos cumple el mismo compromiso con la calidad, la consistencia y la trazabilidad.">
+        From wet salted hides to rendering by-products, every line we export meets the same commitment to quality, consistency and traceability.
+      </p>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card fade-in">
+        <div class="product-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3 2 8l10 5 10-5-10-5Z"/>
+            <path d="M2 13l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3 data-en="Hides" data-es="Cueros">Hides</h3>
+        <p data-en="Wet salted hides, Wet Blue and trimmings — processed and preserved to international tannery standards, ready for export."
+           data-es="Cueros wet salted, Wet Blue y recortes — procesados y conservados según estándares internacionales para curtiembres, listos para exportar.">
+          Wet salted hides, Wet Blue and trimmings — processed and preserved to international tannery standards, ready for export.
+        </p>
+      </div>
+
+      <div class="product-card fade-in">
+        <div class="product-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C12 2 5 11 5 15.5A7 7 0 0 0 19 15.5C19 11 12 2 12 2Z"/>
+          </svg>
+        </div>
+        <h3 data-en="Tallow" data-es="Sebo">Tallow</h3>
+        <p data-en="Rendered and purified animal fat, obtained primarily from cattle, used across soap, biodiesel and animal feed industries."
+           data-es="Grasa animal fundida y purificada, obtenida principalmente de bovinos, utilizada en las industrias de jabón, biodiésel y alimento balanceado.">
+          Rendered and purified animal fat, obtained primarily from cattle, used across soap, biodiesel and animal feed industries.
+        </p>
+      </div>
+
+      <div class="product-card fade-in">
+        <div class="product-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M5 12h14"/>
+            <circle cx="4" cy="9" r="2"/>
+            <circle cx="4" cy="15" r="2"/>
+            <circle cx="20" cy="9" r="2"/>
+            <circle cx="20" cy="15" r="2"/>
+          </svg>
+        </div>
+        <h3 data-en="Bone" data-es="Hueso">Bone</h3>
+        <p data-en="Bones processed into bone meal, or used to extract residual fat — a key input for the animal feed and fertilizer industries."
+           data-es="Huesos procesados para obtener harina de hueso, o utilizados para extraer grasa residual — un insumo clave para las industrias de alimento balanceado y fertilizantes.">
+          Bones processed into bone meal, or used to extract residual fat — a key input for the animal feed and fertilizer industries.
+        </p>
+      </div>
+    </div>
+
+    <div class="rendering-card fade-in">
+      <div class="rendering-top">
+        <span class="overline" data-en="Our Process" data-es="Nuestro Proceso">Our Process</span>
+        <h3 data-en="What is rendering?" data-es="¿Qué es el rendering?">What is rendering?</h3>
+      </div>
+      <p data-en="Rendering is the industrial process of cooking and separating the components of animal by-products to obtain tallow, meat and bone meal, and other outputs — for animal feed, fertilizers, biofuels or industrial use, depending on local regulations."
+         data-es="El rendering es el proceso industrial mediante el cual se cocinan y separan los componentes de los subproductos animales para obtener sebo, harina de carne y hueso, y otros subproductos — destinados a alimento balanceado, fertilizantes, biocombustibles o uso industrial, según la normativa local.">
+        Rendering is the industrial process of cooking and separating the components of animal by-products to obtain tallow, meat and bone meal, and other outputs — for animal feed, fertilizers, biofuels or industrial use, depending on local regulations.
+      </p>
+      <div class="rendering-outputs">
+        <div class="output-tag">
+          <span data-en="Tallow (fat)" data-es="Sebo (grasa)">Tallow (fat)</span>
+        </div>
+        <div class="output-tag">
+          <span data-en="Meat & bone meal" data-es="Harina de carne y hueso">Meat & bone meal</span>
+        </div>
+        <div class="output-tag">
+          <span data-en="Feed, fertilizer & biofuel inputs" data-es="Insumos para alimento, fertilizantes y biocombustibles">Feed, fertilizer & biofuel inputs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ============== GALLERY ============== -->
 <section class="gallery" id="gallery">
@@ -1735,9 +1921,9 @@
 <!-- ============== PLACEHOLDER ============== -->
 <section class="coming-soon">
   <p data-en="Next up — to build in upcoming iterations:" data-es="Próximamente — secciones a construir:">Next up — to build in upcoming iterations:</p>
-  <strong data-en="Products · Process · Infrastructure · Markets · Contact"
-          data-es="Productos · Proceso · Infraestructura · Mercados · Contacto">
-    Products · Process · Infrastructure · Markets · Contact
+  <strong data-en="Process · Infrastructure · Markets · Contact"
+          data-es="Proceso · Infraestructura · Mercados · Contacto">
+    Process · Infrastructure · Markets · Contact
   </strong>
 </section>
 
@@ -1822,7 +2008,7 @@
     // Count-up animation for growth stats
     animateCount('countGrowth', 0, 400, 1600);
     animateCount('countContainers', 0, 150, 1600);
-    animateCount('countYears', 0, 50, 1400);
+    animateCount('countYears', 0, 30, 1400);
   }
 
   function animateCount(id, start, end, duration) {
